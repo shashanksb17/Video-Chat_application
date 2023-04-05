@@ -51,7 +51,8 @@ const username = usernameInput.value;
                       )
                       setTimeout(()=>{
                         window.location.href="lobby.html"
-                      },5500)
+                      },2500)
+
                    
                 }
             })
@@ -99,7 +100,9 @@ const username = usernameInput.value;
                         'Successfully Registered',
                         'success'
                       )
-                    window.location.href="login.html"
+                      setTimeout(()=>{
+                          window.location.href="login.html"
+                      },1500)
                 }else{
                     // alert(res.message)
                     

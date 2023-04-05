@@ -28,7 +28,7 @@ body {
   padding-top: 10px;
   padding-left: 20px;
   width: 200px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .topnav a {
@@ -41,7 +41,7 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
+#con a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -115,11 +115,11 @@ body {
   padding: 10px;
 }
 
-#right-section{
+/* #right-section{
  
   width: 850px;
 
-}
+} */
 #left-section>div{
   display: flex;
   align-items: center;

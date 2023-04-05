@@ -8,7 +8,29 @@ let handleMemberJoined = async (MemberId) => {
     let {name} = await rtmClient.getUserAttributesByKeys(MemberId, ['name'])
     addBotMessageToDom(`Welcome to the room ${name}! 👋`)
 }
+let something=sessionStorage.getItem("token")
+logout=()=>{
+    fetch("https://wild-gold-betta-fez.cyclic.app/users/logout",{
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization":  something 
+          }
+    })
+    .then(res=>res.json())
+    .then(res=>{
 
+        // body: JSON.stringify(data)
+        console.log(res)
+        setTimeout(()=>{
+            window.location.href="index.html"
+        },500)
+        
+    })
+    .catch((error)=>{
+        console.log(error.message)
+    })
+}
 let addMemberToDom = async (MemberId) => {
     let {name} = await rtmClient.getUserAttributesByKeys(MemberId, ['name'])
 
