@@ -40,7 +40,7 @@ The following technologies were used to develop this application:
 
 To get started with this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/ShaikIsmail0567/boundless-sleep-6032.git`
+1. Clone the repository: `git clone https://github.com/shashanksb17/Video-Chat_application`
 2. Install dependencies: `npm install`
 3. Set up environment variables:
    * `MONGODB_URI` - MongoDB connection URI
